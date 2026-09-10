@@ -1,25 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Rastreador de Animais</title>
-    <meta name="description" content="RastroPet: acompanhe seus animais, visualize localizações e gerencie conexões de coleiras inteligentes." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Rastreador de Animais" />
-    <meta property="og:description" content="Acompanhe seus animais e visualize suas localizações em um só lugar." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#19142b" />
+    <meta
+      name="description"
+      content="RastroPet: monitoramento real de animais com telemetria GPS via Bluetooth ou Arduino."
+    />
+    <meta property="og:title" content="RastroPet — monitoramento real" />
+    <meta
+      property="og:description"
+      content="Conecte uma coleira GPS, receba telemetria e acompanhe a localização do seu animal em um mapa real."
+    />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rastreador de Animais" />
-    <meta name="twitter:description" content="Acompanhe seus animais e visualize suas localizações em um só lugar." />
+    <title>RastroPet — monitoramento real</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-DPYt6CNu.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D8K6-j6P.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQ3o/1jJ3nPj6U3Y7nZ0iQ3iS2wU7c="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/assets/app.css?v=20260910.2" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="app"></div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module" src="/assets/app.js?v=20260910.2"></script>
   </body>
 </html>
